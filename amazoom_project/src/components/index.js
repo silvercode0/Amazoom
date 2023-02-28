@@ -8,4 +8,5 @@ export { default as user } from "./user";
 export { default as shopping_cart } from "./shopping_cart";
 export { default as home } from "./home";
 export { default as register } from "./register";
+export { default as review } from "./review";
 
