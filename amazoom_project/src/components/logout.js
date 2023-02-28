@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Logout(props) {
+function logout(props) {
   const { setToken, setUsername } = props;
 
   function wipeData() {
@@ -23,4 +23,4 @@ function Logout(props) {
   );
 }
 
-export default Logout;
+export default logout;
