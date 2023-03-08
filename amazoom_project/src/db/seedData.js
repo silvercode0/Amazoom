@@ -1,5 +1,14 @@
 // Const Variables go here that will be used in this file
 
+const {
+  createUser,
+  createProduct,
+  createShoppingCart,
+  getShoppingCart,
+  getAllProducts,
+  addSupplierToProduct
+} = require('./');
+
 const client = require("./client")
 
 async function dropTables() {
