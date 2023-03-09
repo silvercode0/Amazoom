@@ -1,63 +1,72 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { Outlet, Link } from "react-router-dom";
+import { LoggedIn, Logout } from "./";
+import "./navbar.css";
 
-function Navbar({ setLoggedIn, loggedIn }) {
-  const user = localStorage.getItem("user");
-  return  (
-    <div className={styles.navbar}>
-      <nav className={styles.nav}>
-        <ul>
-          <Link
-            className={styles.link}
-            style={{ textDecoration: "none" }}
-            to="/home"
-          >
-            Home
-          </Link>
-        </ul>
-        <ul>
-          <Link
-            className={styles.link}
-            style={{ textDecoration: "none" }}
-            to="/products"
-          >
-            Products
-          </Link>
-        </ul>
-          
-        <Link
-            className={styles.myreviews}
-            style={{ textDecoration: "none" }}
-            to="/myreviews"
-        >
-            My Reviews
+const Navbar = (props) => {
+  const user = props.user;
+  const setUser = props.setUser;
+  const handleLogout = props.handleLogout;
+  const isLoggedIn = props.isLoggedIn;
+  const setIsLoggedIn = props.setIsLoggedIn;
+
+  return (
+    <div>
+      <div id="navbar">
+        <Link to="/" id="logo">
+          Amazoom
         </Link>
-        <ul>
-            <Link
-            className={styles.link}
-            style={{ textDecoration: "none" }}
-            to="/shopping_cart"
-            >
-            Shopping Cart
+        <Link className="productsNav" to="/products">
+          Products
+        </Link>
+
+        <div className="rightNav">
+          <LoggedIn user={user} className="loggedin" />
+          <div className="navbuttons">
+            <Link to="/login">
+              <i className="fa-solid fa-user loginIcon"></i>
             </Link>
-        </ul>
-       
-        <span className={styles.user}>User:{user}</span>{" "}
-            <ul>
-               <Link
-                  className={styles.link}
-                  style={{ textDecoration: "none" }}
-                  to="/"
-                  onClick={() => {
-                  setLoggedIn(false);
-                  localStorage.clear();
-                  }}
-                >  
-                  Logout
-                </Link>
-            </ul>
-        </nav>
+            <Link to="/shopping_cart/cart_items"></Link>
+
+            {user ? (
+              <Link to="/shopping_cart/cart_items">
+                <i className="fa-solid fa-cart-shopping shoppingIcon"></i>
+              </Link>
+            ) : (
+              <Link to="/guest_cart">
+                <i
+                  id="cartIcon"
+                  className="fa-solid fa-cart-shopping shoppingIcon"
+                ></i>
+              </Link>
+            )}
+
+            {user && user.username ? (
+              <Link to="/myProfile">
+                <i className="fa-solid fa-address-card profileIcon"></i>
+              </Link>
+            ) : null}
+
+            {user && user.is_admin === true ? (
+              <Link to="/admin" className="adminBtn">
+                Admin
+              </Link>
+            ) : null}
+
+            {isLoggedIn ? (
+              <Logout
+                handleLogout={handleLogout}
+                setUser={setUser}
+                setIsLoggedIn={setIsLoggedIn}
+                className="logoutBtn"
+              />
+            ) : null}
+          </div>
+        </div>
+      </div>
+      <Outlet></Outlet>
     </div>
-  
-)}
+  );
+};
 
 export default Navbar;
