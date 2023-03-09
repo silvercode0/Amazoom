@@ -5,7 +5,7 @@ export function Home({ setLoggedIn, loggedIn }) {
   return (
     <>
       <Navbar setLoggedIn={setLoggedIn} loggedIn={loggedIn} />
-      <div className={styles.title}>
+      <div className={title}>
         <h1>Amazoom {user} </h1>
         <h3>
           Go checkout some of our nice Cars !
