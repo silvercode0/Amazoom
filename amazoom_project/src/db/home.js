@@ -1,5 +1,4 @@
 // Home // -- Regular Route -- Base
-
 import Navbar from "./navbar";
 export function Home({ setLoggedIn, loggedIn }) {
   const user = localStorage.getItem("user");
