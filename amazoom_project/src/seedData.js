@@ -9,12 +9,12 @@
 //   addSupplierToProduct
 // } = require('./');
 
-const { createUser } = require( "./users");
-const{createProduct}=require("./products")
-const{createReviews}=require('./reviews')
+const { createUser } = require( "./Users");
+const{createProduct}=require("./Products")
+const{createReviews}=require('./Reviews')
 const client = require("./client");
-const { createShoppingCart } = require("./shopping_cart");
-const{addItemsToCart}=require("./shopping_cartitems")
+const { createShoppingCart } = require("./Shopping_Cart");
+const{addItemsToCart}=require("./Shopping_CartItems")
 async function dropTables() {
   try {
     console.log('Dropping All Tables...');
