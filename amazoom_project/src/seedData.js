@@ -9,12 +9,21 @@
 //   addSupplierToProduct
 // } = require('./');
 
+<<<<<<< HEAD
 const { createUser } = require( "./users");
 const{createProduct}=require("./Products")
 const{createReviews}=require('./reviews')
 const client = require("./client");
 const { createShoppingCart } = require("./Shopping_Cart");
 const{addItemsToCart}=require("./shopping_cartitems")
+=======
+const { createUser } = require( "./Users");
+const{createProduct}=require("./Products")
+const{createReviews}=require('./Reviews')
+const client = require("./client");
+const { createShoppingCart } = require("./Shopping_Cart");
+const{addItemsToCart}=require("./Shopping_CartItems")
+>>>>>>> 1d54af54c3f92775aa6ea8dc703c46ab48ca8cba
 async function dropTables() {
   try {
     console.log('Dropping All Tables...');
