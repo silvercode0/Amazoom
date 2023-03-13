@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <footer className="footer">
-        <BuyOptions></BuyOptions>
-        <Supplier></Supplier>
+        {/* <BuyOptions></BuyOptions>
+        <Supplier></Supplier> */}
         <h1> Finance </h1>
         <Link id="Finance" to="/BuyOptions">
             Learn More

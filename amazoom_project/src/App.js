@@ -1,7 +1,7 @@
 import React from 'react';
 import "./App.css"
-import Supplier from "./Supplier"
-import BuyOptions from "./BuyOptions"
+// import Supplier from "./Supplier"
+// import BuyOptions from "./BuyOptions"
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
         </p>
       </header>
       <footer>
-        <BuyOptions></BuyOptions>
-        <Supplier></Supplier>
+        {/* <BuyOptions></BuyOptions>
+        <Supplier></Supplier> */}
       </footer>
     </div>
   );
