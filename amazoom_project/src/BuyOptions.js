@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 const BuyOptions = () => {
     return ( 
         <div className="BuyOptions-container">
@@ -16,3 +19,4 @@ const BuyOptions = () => {
         </div>
     )
 }
+export default BuyOptions;

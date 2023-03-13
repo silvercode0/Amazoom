@@ -1,4 +1,7 @@
 // LET PEOPLE KNOW WHO WE ARE // 
+import { Link } from "react-router-dom";
+
+
 const Supplier = () => {
     return ( 
         <div className="supplier-container">
@@ -9,3 +12,5 @@ const Supplier = () => {
         </div>
     )
 }
+
+export default Supplier;

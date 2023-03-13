@@ -1,5 +1,7 @@
 import React from 'react';
 import "./App.css"
+import Supplier from "./Supplier"
+import BuyOptions from "./BuyOptions"
 
 function App() {
   return (
@@ -15,8 +17,13 @@ function App() {
           TESTING
         </p>
       </header>
+      <footer>
+        <BuyOptions></BuyOptions>
+        <Supplier></Supplier>
+      </footer>
     </div>
   );
 }
+
 
 export default App;
