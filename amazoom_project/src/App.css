@@ -9,8 +9,8 @@
 }
 
 .test2{ 
-  color: aquamarine;
-  background-color: #282c34;
+  color: rgb(59, 62, 61);
+  background-color: #90c9fc;
 }
 
 @media (prefers-reduced-motion: no-preference) {

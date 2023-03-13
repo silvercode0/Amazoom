@@ -1,7 +1,8 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import { LoggedIn, Logout } from "./";
-import "./navbar.css";
+import "./Navbar.css";
+
 
 const Navbar = (props) => {
   const user = props.user;
