@@ -1,5 +1,6 @@
 import React from 'react';
 import "./App.css"
+import Login from "./Login"
 // import Supplier from "./Supplier"
 // import BuyOptions from "./BuyOptions"
 
@@ -13,6 +14,7 @@ function App() {
         <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
+        <Login></Login>
         <p class="test2">
           TESTING
         </p>
