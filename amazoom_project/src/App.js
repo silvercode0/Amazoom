@@ -1,12 +1,13 @@
 // import { Route, Routes } from 'react-router-dom';
 // import React from 'react';
-import './Navbar.css';
-import './App.css';
-import "./Supplier.css";
+// import './Navbar.css';
+// import "./Supplier.css";
 import "./Home.css";
-
+import './Products.css';
+import React from 'react';
+import "./App.css"
 import Home from './Home';
-// import MyProfile from './MyProfile';
+import MyProfile from './MyProfile';
 // import Navbar from './Navbar';
 // import Login from './Login';
 // import Supplier from "./Supplier"
@@ -34,8 +35,7 @@ import Home from './Home';
 
 
 
-import React from 'react';
-import "./App.css"
+
 
 function App() {
   return (
@@ -52,8 +52,9 @@ function App() {
         <p class="test2">
           TESTING
         </p>
-        
-        {/* <Navbar/> */}
+        {/* <Products /> */}
+        {/* <Navbar /> */}
+        <MyProfile />
         {/* <Supplier/> */}
       </header>
     </div>

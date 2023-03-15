@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
-import Home from "./Home"
+// import { Link } from "react-router-dom";
+// import Home from "./Home"
 
+
+import React from "react";
+import { Outlet, Link } from "react-router-dom";
+import { LoggedIn, Logout } from "./Login";
+import "./Navbar.css";
 function Navbar({ setLoggedIn, loggedIn }) {
   const user = localStorage.getItem("user");
   return  (
-    <div class="styleNavbar">
-      <nav class="nav">
+    <div className="styleNavbar">
+      <nav className="nav">
         <ul>
           <Link
-            class="styleLink"
+            className="styleLink"
             style={{ textDecoration: "none" }}
             to="/Home"
           >
@@ -17,7 +22,7 @@ function Navbar({ setLoggedIn, loggedIn }) {
         </ul>
         <ul>
           <Link
-            class="styleLink"
+            className="styleLink"
             style={{ textDecoration: "none" }}
             to="/MyProfile"
           >
@@ -25,7 +30,7 @@ function Navbar({ setLoggedIn, loggedIn }) {
           </Link>
         </ul> 
         <Link
-          class="Review"
+          className="Review"
           style={{ textDecoration: "none" }}
           to="/Review"
         >
@@ -33,17 +38,17 @@ function Navbar({ setLoggedIn, loggedIn }) {
         </Link>
         <ul>
         <Link
-          class="styleLink"
+          className="styleLink"
           style={{ textDecoration: "none" }}
           to="/Products"
         >
           Products
         </Link>
         </ul>
-        <span class="styleUser">User:{user}</span>{" "}
+        <span className="styleUser">User:{user}</span>{" "}
         <ul>
         <Link
-          class="styleLink"
+          className="styleLink"
           style={{ textDecoration: "none" }}
           to="/"
           onClick={() => {

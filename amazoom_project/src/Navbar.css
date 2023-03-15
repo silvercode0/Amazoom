@@ -5,11 +5,14 @@
 body {
   margin:0;
   padding: 1%;
+  background: blue;
 }
-
-.styleNavbar {
-  background-color: rgb(122, 158, 240);
-  color:white;
+div{
+  background: #000000;
+}
+/* .styleNavbar {
+  background-color: #749eff;
+  color:#000000;
   display:flex;
   justify-content: stretch;
   align-items:center;
@@ -40,4 +43,4 @@ body {
 
 .nav li:hover {
   background-color:#777;
-}
+} */
