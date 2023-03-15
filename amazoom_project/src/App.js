@@ -3,9 +3,7 @@
 // import './Navbar.css';
 // import "./Supplier.css";
 import "./Home.css";
-import './Products.css';
-import React from 'react';
-import "./App.css"
+import "./Footer.css";
 import Home from './Home';
 import MyProfile from './MyProfile';
 // import Navbar from './Navbar';
@@ -39,22 +37,21 @@ import MyProfile from './MyProfile';
 
 function App() {
   return (
+  
     <div style={{ textAlign: 'center' }}>
       <header>
         <Home/>
         <p>
 
-          Edit <code>src/App.js</code> and save to reload.
+          
         </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
+        
+        
         <p class="test2">
-          TESTING
+          
         </p>
-        {/* <Products /> */}
-        {/* <Navbar /> */}
-        <MyProfile />
+    
+        {/* <Navbar/> */}
         {/* <Supplier/> */}
       </header>
     </div>

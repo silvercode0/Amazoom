@@ -1,7 +1,6 @@
 .App {
   text-align: center;
-  color: #282c34;
-  background-color: #61dafb;
+  background-color: #90c9fc;
 }
 
 
@@ -15,6 +14,7 @@
   color: rgb(59, 62, 61);
   background-color: #90c9fc;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

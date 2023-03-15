@@ -4,9 +4,10 @@ export { default as Login } from "./Login";
 export { default as Logout } from "./Logout";
 export { default as ModifyReview } from "./ModifyReview";
 export { default as Supplier } from "./Supplier";
-export { default as user } from "./user";
-export { default as Shopping_cart } from "./Shopping_cart";
+export { default as Users } from "./Users";
+export { default as Shopping_Cart } from "./Shopping_Cart";
 export { default as Home } from "./Home";
 export { default as Register } from "./Register";
 export { default as Review } from "./Review";
+export { default as Footer } from "./Footer";
 
