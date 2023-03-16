@@ -2,7 +2,7 @@ import React from 'react'
 
 function Shopping_Cart() {
   return (
-    <div>Cart</div>
+    <div className='CartStyle'>Cart</div>
   )
 }
 

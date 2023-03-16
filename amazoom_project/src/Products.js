@@ -43,7 +43,7 @@ const Products = (props) => {
 
   function handleBackToMyCart(e) {
     e.preventDefault();
-    navigate("/mycart/cart_items");
+    navigate("/Shopping_Cart/Cart_Items");
   }
 
   const addProduct = async (productId, price) => {

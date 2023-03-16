@@ -1,11 +1,11 @@
 // import { Route, Routes } from 'react-router-dom';
-// import React from 'react';
+import React from 'react';
+
 // import './Navbar.css';
 // import "./Supplier.css";
 import "./Home.css";
-import "./Footer.css";
 import Home from './Home';
-import MyProfile from './MyProfile';
+// import MyProfile from './MyProfile';
 // import Navbar from './Navbar';
 // import Login from './Login';
 // import Supplier from "./Supplier"
@@ -47,7 +47,7 @@ function App() {
         </p>
         
         
-        <p class="test2">
+        <p className="test2">
           
         </p>
     
