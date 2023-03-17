@@ -1,72 +1,72 @@
 .edit-user {
-    width: 500px;
-    border: 5px outset violet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background: rgba(245, 245, 245, 0.61);
-    border-radius: 20px;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 40px;
-  }
+  width: 500px;
+  border: 5px outset violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(245, 245, 245, 0.61);
+  border-radius: 20px;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+}
   
-  .twobuttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
+.twobuttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
   
-  .myprofile-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    justify-content: space-between;
-    padding: 15px;
-  }
+.myprofile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: space-between;
+  padding: 15px;
+}
   
-  .orderhistory {
-    text-decoration: none;
-    color: rgb(87, 47, 113);
-    font-size: 20px;
+.orderhistory {
+  text-decoration: none;
+  color: rgb(87, 47, 113);
+  font-size: 20px;
+}
+  
+.updateUsername,
+.updateEmail,
+.updateAddress {
+  width: 400px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+  
+.myprofile-button {
+  margin-top: 10px;
+}
+  
+@media screen and (max-width: 768px) {
+  .edit-user {
+    width: 350px;
   }
   
   .updateUsername,
   .updateEmail,
   .updateAddress {
-    width: 400px;
-    height: 25px;
-    margin-bottom: 5px;
+    width: 280px;
   }
+}
   
-  .myprofile-button {
-    margin-top: 10px;
-  }
+ .orderBtn {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-right: 8px;
+  border: 2px solid rgb(87, 47, 113);
+  border-radius: 5px;
+  background-color: rgba(137, 223, 249, 0);
   
-  @media screen and (max-width: 768px) {
-    .edit-user {
-      width: 350px;
-    }
-  
-    .updateUsername,
-    .updateEmail,
-    .updateAddress {
-      width: 280px;
-    }
-  }
-  
-  .orderBtn {
-    font-size: 25px;
-    margin-top: 15px;
-    margin-right: 8px;
-    border: 2px solid rgb(87, 47, 113);
-    border-radius: 5px;
-    background-color: rgba(137, 223, 249, 0);
-  
-    -webkit-text-stroke: 0.2px white;
-    font-family: "Zen Dots", cursive;
-    color: rgb(87, 47, 113);
-    text-decoration: none;
-  }
+  -webkit-text-stroke: 0.2px white;
+  font-family: "Zen Dots", cursive;
+  color: rgb(87, 47, 113);
+  text-decoration: none;
+}
