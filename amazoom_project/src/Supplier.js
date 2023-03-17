@@ -1,14 +1,14 @@
 // LET PEOPLE KNOW WHO WE ARE // 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 const Supplier = () => {
     return ( 
         <div className="supplier-container">
-          <h1> Supplier </h1>
-          <Link id="Supplier" to="/Supplier">
+          <h4> Supplier </h4>
+          <a href="http://localhost:3000/Supplier" id="Supplier" to="/Supplier">
             About Us
-          </Link>
+          </a>
         </div>
     )
 }

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "./guestCart.css";
-import Footer from "./Footer";
-import { RingLoader } from "react-spinners";
-import StripeCheckout from "react-stripe-checkout";
-import { makePayment } from "../api-adapter";
-import STRIPE_PUBLISHABLE from "../constants/Stripe";
-import "./loading.css"
-import "./userCart.css"
+import "./Guest_Cart.css";
+// import Footer from "./Footer";
+// import { RingLoader } from "react-spinners";
+// import StripeCheckout from "react-stripe-checkout";
+// import { makePayment } from "../api-adapter";
+// import STRIPE_PUBLISHABLE from "../constants/Stripe";
+// import "./Loading.css"
+// import "./UserCart.css"
 import { useNavigate } from "react-router-dom";
 
 const GuestCart = () => {
@@ -111,17 +111,17 @@ const GuestCart = () => {
   return (
     <div>
       {
-        loading ? <div id="theLoader"><RingLoader id="ringer"
+        // loading ? <div id="theLoader"><RingLoader id="ringer"
         
-        size={150}
-        color={"#d636d0"}
-        loading={loading}
-        /> </div>: 
+        // size={150}
+        // color={"#d636d0"}
+        // loading={loading}
+        // /> </div>: 
       <div id="newWhole">
         <button onClick={handleBack} className="checkoutButton">
       Continue Shopping
     </button>
-        <StripeCheckout
+        {/* <StripeCheckout
                     stripeKey={STRIPE_PUBLISHABLE}
                     token={makePayment}
                     name="Guest cart"
@@ -131,7 +131,7 @@ const GuestCart = () => {
                     <button onClick={clearCart}className="checkoutButton">
                       Checkout Your Cart
                     </button>
-                  </StripeCheckout>
+                  </StripeCheckout> */}
         <h1 id="header">Cart</h1>
         <div id="guestCartContainer">
           {cart.length ? (

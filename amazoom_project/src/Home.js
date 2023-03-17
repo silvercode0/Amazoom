@@ -28,22 +28,19 @@ const Home = () => {
       <h2 className="subheader">
         We are Cars, <u>Paradise</u>
       </h2>
+      {/* <div className="btn-group">
+      <button>Trucks</button>
+       <button>Sedans</button>
+        <button>SUVs</button>
+     </div>
       <div className="btn-group">
-  <button>Trucks</button>
-  <button>Sedans</button>
-  <button>SUVs</button>
-  </div>
-   <div className="btn-group">
-  <button>Electric</button>
-  <button>Car</button>
-  <button>Car</button>
-  </div>
-  <p className="textbox"> Great Affordable Cars!</p>
-</div>
-    
-
-    
-  );
+       <button>Electric</button>
+       <button>Car</button>
+      <button>Car</button>
+     </div> */}
+       <p className="textbox"> Great Affordable Cars!</p>
+    </div>
+   );
 };
 
 export default Home;

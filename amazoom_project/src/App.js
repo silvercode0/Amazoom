@@ -1,10 +1,13 @@
 // import { Route, Routes } from 'react-router-dom';
 import React from 'react';
+import "./App.css"
 
 // import './Navbar.css';
 // import "./Supplier.css";
-import "./Home.css";
+// import "./Home.css";
 import Home from './Home';
+import Footer from './Footer';
+// import Guest_Cart from './Guest_Cart'
 // import MyProfile from './MyProfile';
 // import Navbar from './Navbar';
 // import Login from './Login';
@@ -40,20 +43,17 @@ function App() {
   
     <div style={{ textAlign: 'center' }}>
       <header>
-        <Home/>
-        <p>
-
-          
-        </p>
-        
-        
-        <p className="test2">
-          
-        </p>
-    
-        {/* <Navbar/> */}
+        <div><Home/></div>
+        <br/>
+       
+       
         {/* <Supplier/> */}
       </header>
+      {/* <Guest_Cart /> */}
+       {/* <Navbar/> */}
+       <footer>
+        <Footer />
+       </footer>
     </div>
   );
 }

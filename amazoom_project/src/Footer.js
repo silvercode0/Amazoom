@@ -1,5 +1,5 @@
 import React from "react";
-// import Supplier from "./Supplier";
+import Supplier from "./Supplier";
 // import BuyOptions from "./BuyOptions";
 // import { Outlet, Link } from "react-router-dom";
 import "./Footer.css";
@@ -42,29 +42,31 @@ function Footer() {
          {/* Column1 */}
          <div className="col">
            <h4>Finance</h4>
-            <h1 className="list-unstyled">
+            <h4 className="list-unstyled">
              <li>555-5555-5555</li>
               <li>California</li>
               <li>123 Street</li>
-            </h1>
+            </h4>
           </div>
          {/* Column2 */}
           <div className="col">
            <h4>Sell/Trade</h4>
            <ui className="list-unstyled">
-             <li>Other</li>
-             <li>Other </li>
-             <li>Other</li>
+             <li>Learn More</li>
+             
            </ui>
          </div>
          {/* Column3 */}
           <div className="col">
            <h4>How it works</h4>
            <ui className="list-unstyled">
-             <li>Other</li>
-             <li>Other </li>
-             <li>Other</li>
+             <li>Learn More</li>
            </ui>
+           <div>
+            <ui>
+              <Supplier/>
+            </ui>
+           </div>
           </div>
         </div>
         <hr />
