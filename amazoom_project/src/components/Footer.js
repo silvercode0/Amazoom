@@ -43,9 +43,8 @@ function Footer() {
          <div className="col">
            <h4>Finance</h4>
             <h4 className="list-unstyled">
-             <li>555-5555-5555</li>
-              <li>California</li>
-              <li>123 Street</li>
+             <li>Learn More</li>
+              
             </h4>
           </div>
          {/* Column2 */}
