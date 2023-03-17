@@ -10,10 +10,10 @@
 // } = require('./');
 
 const { createUser } = require( "./users");
-const{createProduct}=require("./products")
+const{createProduct}=require("../components/Products")
 const{createReviews}=require('./reviews')
 const client = require("./client");
-const { createShoppingCart } = require("./shopping_cart");
+const { createShoppingCart } = require("../components/Shopping_Cart");
 const{addItemsToCart}=require("./shopping_cartitems")
 async function dropTables() {
   try {

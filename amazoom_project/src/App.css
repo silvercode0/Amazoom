@@ -1,17 +1,20 @@
 .App {
   text-align: center;
-  background-color: #61dafb;
+  background-color: #90c9fc;
 }
 
+
 .App-logo {
+  color: #282c34;
   height: 40vmin;
   pointer-events: none;
 }
 
 .test2{ 
-  color: aquamarine;
-  background-color: #282c34;
+  color: rgb(59, 62, 61);
+  background-color: #90c9fc;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -27,7 +30,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {

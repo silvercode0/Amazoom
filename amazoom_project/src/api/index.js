@@ -99,7 +99,7 @@ export async function getUserCart() {
     const result = await response.json();
 
     if (result.message) {
-      setLoginMessage(result.message);
+      // setLoginMessage(result.message);
     }
 
     return result;
@@ -121,7 +121,7 @@ export async function getOrderHistory() {
     const result = await response.json();
 
     if (result.message) {
-      setLoginMessage(result.message);
+      // setLoginMessage(result.message);
     }
 
     return result;
@@ -313,7 +313,7 @@ export async function makePayment(token) {
     },
     body: JSON.stringify({
       token,
-      product,
+      // product,
     }),
   };
   try {

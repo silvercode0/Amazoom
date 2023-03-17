@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function logout(props) {
+function Logout(props) {
   const { setToken, setUsername } = props;
 
   function wipeData() {
@@ -13,14 +13,14 @@ function logout(props) {
 
   wipeData();
 
-  return window.location.href === "/home" ||
-    window.location.href === "/product" ||
-    window.location.href === "/shopingcart" ||
-    window.location.href === "/login" ? (
+  return window.location.href === "/Home" ||
+    window.location.href === "/Product" ||
+    window.location.href === "/Shopping_Cart" ||
+    window.location.href === "/Login" ? (
     <Link to={window.location.href} />
   ) : (
-    <Link to={"/home"} />
+    <Link to={"/Home"} />
   );
 }
 
-export default logout;
+export default Logout;

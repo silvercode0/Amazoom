@@ -1,0 +1,18 @@
+.footer-container {
+  color: white;
+  background-color: #6daff1;
+  padding-top: 3em;
+  position: fixed;
+  
+  bottom: 0;
+  width: 100%;
+}
+
+.row {
+  background: cyan;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+
+}
