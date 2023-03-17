@@ -5,8 +5,8 @@ import "./App.css"
 // import './Navbar.css';
 // import "./Supplier.css";
 // import "./Home.css";
-import Home from './Home';
-import Footer from './Footer';
+import Home from './components/Home';
+import Footer from './components/Footer';
 // import Guest_Cart from './Guest_Cart'
 // import MyProfile from './MyProfile';
 // import Navbar from './Navbar';

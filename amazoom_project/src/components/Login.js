@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { loginUser } from "./api/index";
+import { loginUser } from "../api/index";
 import { toast } from "react-toastify";
 import "./Login.css";
 

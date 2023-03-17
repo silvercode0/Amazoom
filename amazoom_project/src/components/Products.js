@@ -1,9 +1,3 @@
-
-// const Products = () => {
-    
-// }
-
-
 import React, { useState, useEffect } from "react";
 import {
   addProductToUserCart,
@@ -11,7 +5,7 @@ import {
   getProductsById,
   getUserCart,
   updateQuantity,
-} from "./api/index.js";
+} from "../api/index.js";
 import "./Products.css";
 import { Link, useNavigate } from "react-router-dom";
 // import Admin from "./Admin";
@@ -47,7 +41,6 @@ const Products = (props) => {
   }
 
   const addProduct = async (productId, price) => {
-    // pass props.quantitity into APTUC later, once that is fixed
     if (userCart) {
       const quantity = 1;
       const addedToCart = await addProductToUserCart(
@@ -126,12 +119,12 @@ const Products = (props) => {
     <div>
       {loading ? (
         <div id="theLoader">
-          <RingLoader
+          {/* <RingLoader
             id="ringer"
             size={150}
             color={"#d636d0"}
             loading={loading}
-          />{" "}
+          />{" "} */}
         </div>
       ) : (
         <div id="wholeThing">
@@ -145,10 +138,6 @@ const Products = (props) => {
                     <div className="productDescription">
                       {product.description}
                     </div>
-                    {/* <div className="productDescription">
-                  {` testing product id ${product.id}`}
-                </div> */}
-
                     <div className="productInStock">
                       {product.stock} In Stock
                     </div>
