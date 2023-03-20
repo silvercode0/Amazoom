@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
 import {
   addProductToUserCart,
-  getProducts,
+  // getProducts,
   getProductsById,
-  getUserCart,
+  // getUserCart,
   updateQuantity,
-} from "../api/index.js";
+} from "../api/index";
 import "./Products.css";
 import { Link, useNavigate } from "react-router-dom";
 // import Admin from "./Admin";
 // import Footer from "./Footer";
-import { RingLoader } from "react-spinners";
+// import { RingLoader } from "react-spinners";
 import { toast } from "react-toastify";
 
 const Products = (props) => {
   const [loading, setLoading] = useState(false);
-  const [guestCart, setGuestCart] = useState(localStorage.getItem("guestCart"));
+  // const [guestCart, setGuestCart] = useState(localStorage.getItem("guestCart"));
 
   useEffect(() => {
     setLoading(true);
@@ -29,10 +29,10 @@ const Products = (props) => {
   const successNotify = () => toast("Added to cart!");
 
   const products = props.products;
-  const setProducts = props.setProducts;
+  // const setProducts = props.setProducts;
   const userCart = props.userCart;
   const setUserCart = props.setUserCart;
-  const fetchUserCart = props.fetchUserCart;
+  // const fetchUserCart = props.fetchUserCart;
   const navigate = useNavigate();
 
   function handleBackToMyCart(e) {
@@ -51,7 +51,7 @@ const Products = (props) => {
       if (addedToCart.message) {
         const mappedForUpdate = await Promise.all(
           userCart.map(async (item) => {
-            if (item.productId == productId) {
+            if (item.productId === productId) {
               const updated = await updateQuantity(item.id, item.quantity + 1);
               return updated;
             } else {
@@ -90,14 +90,14 @@ const Products = (props) => {
       existingItems = JSON.parse(localStorage.getItem("guestCart"));
 
       const filteredItem = existingItems.filter((item) => {
-        return item.tempID == productId;
+        return item.tempID === productId;
       });
       if (filteredItem.length) {
         filteredItem[0].product.quantity = parseInt(
           filteredItem[0].product.quantity + 1
         );
         const filteredExistingItems = existingItems.filter((item) => {
-          return item.tempID != productId;
+          return item.tempID !== productId;
         });
         filteredExistingItems.push(filteredItem[0]);
         localStorage.setItem(
@@ -112,7 +112,7 @@ const Products = (props) => {
 
     localStorage.setItem("guestCart", JSON.stringify(existingItems));
 
-    let tester = localStorage.getItem("guestCart");
+    // let tester = localStorage.getItem("guestCart");
   }
 
   return (
@@ -128,7 +128,7 @@ const Products = (props) => {
         </div>
       ) : (
         <div id="wholeThing">
-          <h1 className="WholeProducts"></h1>
+          <h1 className="WholeProducts">Cars</h1>
           <div id="container">
             {products.length ? (
               products.map((product) => {
@@ -144,7 +144,7 @@ const Products = (props) => {
                     <div className="productPrice">${product.price / 100}</div>
 
                     <div id="frame">
-                      <img id="productImage" src={`${product.image_url}`} />
+                      <img id="productImage" alt="car" src={`${product.image_url}`} />
                     </div>
 
                     <div id="buttonContainer">

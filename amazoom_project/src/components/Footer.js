@@ -51,21 +51,21 @@ function Footer() {
          {/* Column2 */}
           <div className="col">
            <h4>Sell/Trade</h4>
-           <ui className="list-unstyled">
+           <h4 className="list-unstyled">
              <li>Learn More</li>
              
-           </ui>
+           </h4>
          </div>
          {/* Column3 */}
           <div className="col">
            <h4>How it works</h4>
-           <ui className="list-unstyled">
+           <h4 className="list-unstyled">
              <li>Learn More</li>
-           </ui>
+           </h4>
            <div>
-            <ui>
+            <h4>
               <Supplier/>
-            </ui>
+            </h4>
            </div>
           </div>
         </div>

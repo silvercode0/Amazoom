@@ -9,7 +9,7 @@ import "./Guest_Cart.css";
 // import "./UserCart.css"
 import { useNavigate } from "react-router-dom";
 
-const GuestCart = () => {
+const Guest_Cart = () => {
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
@@ -111,12 +111,7 @@ const GuestCart = () => {
   return (
     <div>
       {
-        // loading ? <div id="theLoader"><RingLoader id="ringer"
         
-        // size={150}
-        // color={"#d636d0"}
-        // loading={loading}
-        // /> </div>: 
       <div id="newWhole">
         <button onClick={handleBack} className="checkoutButton">
       Continue Shopping
@@ -133,7 +128,7 @@ const GuestCart = () => {
                     </button>
                   </StripeCheckout> */}
         <h1 id="header">Cart</h1>
-        <div id="guestCartContainer">
+        <div id="guestCart">
           {cart.length ? (
             cart.map((product) => {
               console.log(product)
@@ -147,7 +142,7 @@ const GuestCart = () => {
                   <div className="quantity">Quantity: {product.product.quantity}</div>
                   <img id="productImage" src={`${product.product.image_url}`} />
 
-                <div id="allthebuttons">
+                <div id="allButtons">
                   <button id="leftButtonCart" onClick={() => handleDelete(product.product.id)}>
                     Delete
                   </button>
@@ -185,4 +180,4 @@ const GuestCart = () => {
   );
 };
 
-export default GuestCart;
+export default Guest_Cart;
