@@ -10,7 +10,7 @@ import "./Products.css";
 import { Link, useNavigate } from "react-router-dom";
 // import Admin from "./Admin";
 // import Footer from "./Footer";
-import { RingLoader } from "react-spinners";
+// import { RingLoader } from "react-spinners";
 import { toast } from "react-toastify";
 
 const Products = (props) => {
@@ -190,7 +190,9 @@ const Products = (props) => {
                 );
               })
             ) : (
-              <div id="loadingProducts">Loading your products... </div>
+              <div id="loadingProducts">Loading your products... 
+              <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jdpower.com%2Fcars%2Fshopping-guides%2Faverage-weight-of-a-car&psig=AOvVaw3RxNKyNlTqnrm99irygrRp&ust=1679446853297000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIDu65rp6_0CFQAAAAAdAAAAABAE" alt="Car"></img>
+              </div>
             )}
           </div>
         </div>

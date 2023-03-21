@@ -5,17 +5,17 @@ const BuyOptions = () => {
     return ( 
         <div className="BuyOptions-container">
           <h1> Finance </h1>
-        <Link id="Finance" to="/BuyOptions">
+        <a href="http://localhost:3000/BuyOptions" id="Finance" to="/BuyOptions">
             Learn More
-        </Link>
+        </a>
         <h1> Sell/Trade </h1>
-        <Link id="SellTrade" to="/BuyOptions">
+        <a href="http://localhost:3000/BuyOptions"id="SellTrade" to="/BuyOptions">
             Learn More
-        </Link>
+        </a>
         <h1> How It Works </h1>
-        <Link id="HowItWorks" to="/BuyOptions">
+        <a href="http://localhost:3000/Buyoptions" id="HowItWorks" to="/BuyOptions">
             Learn More
-        </Link>
+        </a>
         </div>
     )
 }
