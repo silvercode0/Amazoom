@@ -83,14 +83,12 @@
     letter-spacing: 0.5px;
     color: white;
     background-color: rgb(87, 47, 113);
-    /* background: linear-gradient(132deg, rgba(245, 109, 164, 1) 0%, rgba(188, 185, 254, 1) 50%, rgba(112, 227, 204, 1) 100%); */
   
     background: linear-gradient(
       132deg,
-      rgb(154, 112, 227) 100%,
+      rgb(229, 237, 255) 100%,
       132deg,
-      rgba(188, 185, 254, 1) 50%,
-      rgba(245, 109, 164, 1) 0%
+      rgb(209, 246, 255) 0%,
     );
   }
   

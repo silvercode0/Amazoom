@@ -7,9 +7,10 @@ import "./App.css"
 // import "./Home.css";
 import Home from './components/Home';
 import Footer from './components/Footer';
+import ContactUs from './components/ContactUs';
 // import Guest_Cart from './Guest_Cart'
 // import MyProfile from './MyProfile';
-// import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 // import Login from './Login';
 // import Supplier from "./Supplier"
 // import Products from'./Products';
@@ -43,14 +44,14 @@ function App() {
   
     <div style={{ textAlign: 'center' }}>
       <header>
-        <div><Home/></div>
+        <Navbar/>
+
         <br/>
-       
-       
-        {/* <Supplier/> */}
-      </header>
+        <ContactUs />
+       </header>
+         <div><Home/></div>
+
       {/* <Guest_Cart /> */}
-       {/* <Navbar/> */}
        <footer>
         <Footer />
        </footer>
