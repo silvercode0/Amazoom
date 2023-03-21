@@ -2,7 +2,7 @@ import React from "react";
 import Stripe from "stripe";
 import STRIPE_PUBLISHABLE from "../stripe/Stripe";
 
-const StripeComponent = () => {
+const StripeC = () => {
   const stripe = new Stripe(STRIPE_PUBLISHABLE);
 
   (async () => {
@@ -14,4 +14,4 @@ const StripeComponent = () => {
   })();
 };
 
-export default StripeComponent;
+export default StripeC;

@@ -24,6 +24,12 @@
   display: flex;
 }
 
+#navs1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .leftNav {
   display: flex;
   justify-content: space-between;
@@ -39,28 +45,24 @@
 
 .loginIcon {
   font-size: x-large;
-  /* margin-left: 50px; */
   -webkit-text-stroke: 0.3px white;
   margin-right: 10px;
 }
 
 .shoppingIcon {
   font-size: x-large;
-  /* margin-left: 50px; */
   -webkit-text-stroke: 0.3px white;
   margin-right: 10px;
 }
 
 .profileIcon {
   font-size: x-large;
-  /* margin-left: 50px; */
   -webkit-text-stroke: 0.3px white;
   margin-right: 20px;
 }
 
 .adminBtn {
   font-size: 18px;
-  /* margin-left: 95px; */
   margin-right: 8px;
   border: 2px solid #ffce74;
   border-radius: 5px;

@@ -20,11 +20,13 @@
 
 import React from "react";
 import "./Home.css";
+import carwash from "./carwash.png"
 
 const Home = () => {
   return (
     <div id="home-container">
       <h1 className="header">Amazoom</h1>
+      <img id="car" src={carwash.png} alt="logo"></img>
       <h2 className="subheader">
         We are Cars, <u>Paradise</u>
       </h2>

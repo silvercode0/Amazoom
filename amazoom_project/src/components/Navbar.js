@@ -3,7 +3,6 @@
 
 
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
 import { LoggedIn, Logout } from "./Login";
 import "./Navbar.css";
 function Navbar({ setLoggedIn, loggedIn }) {
@@ -11,6 +10,7 @@ function Navbar({ setLoggedIn, loggedIn }) {
   return  (
     <div className="styleNavbar">
       <nav className="nav">
+        <div id="navs1">
         <ul>
           <a href="/Home" className="styleLink"
             style={{ textDecoration: "none" }}
@@ -18,6 +18,8 @@ function Navbar({ setLoggedIn, loggedIn }) {
             Home
           </a>
         </ul>
+        </div>
+        <div id="navs1">
         <ul>
           <a href="/MyProfile" className="styleLink"
             style={{ textDecoration: "none" }}
@@ -25,13 +27,17 @@ function Navbar({ setLoggedIn, loggedIn }) {
           >
             Profile
           </a>
-        </ul> 
+        </ul>
+        </div>
+        <div id="navs1">
         <a href="/Review" className="Review"
           style={{ textDecoration: "none" }}
           
         >
           My Reviews
         </a>
+        </div>
+        <div id="navs1">
         <ul>
         <a href="/Products" className="styleLink"
           style={{ textDecoration: "none" }}
@@ -40,6 +46,7 @@ function Navbar({ setLoggedIn, loggedIn }) {
           Products
         </a>
         </ul>
+        </div>
         <span className="styleUser">User:{user}</span>{" "}
         <ul>
         <a href="/" className="styleLink"
@@ -52,7 +59,6 @@ function Navbar({ setLoggedIn, loggedIn }) {
           Logout
         </a>
       </ul>
-  
     </nav>
   </div>
   
