@@ -38,8 +38,15 @@ const Home = () => {
        <button>Car</button>
       <button>Car</button>
      </div> */}
-       <p className="textbox"> Great Affordable Cars!</p>
-    </div>
+       
+       <div className="textbox">Affordable Cars!</div>
+       
+      
+    
+
+     </div>
+    
+    
    );
 };
 

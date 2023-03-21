@@ -12,52 +12,45 @@ function Navbar({ setLoggedIn, loggedIn }) {
     <div className="styleNavbar">
       <nav className="nav">
         <ul>
-          <Link
-            className="styleLink"
+          <a href="/Home" className="styleLink"
             style={{ textDecoration: "none" }}
-            to="/Home"
           >
             Home
-          </Link>
+          </a>
         </ul>
         <ul>
-          <Link
-            className="styleLink"
+          <a href="/MyProfile" className="styleLink"
             style={{ textDecoration: "none" }}
-            to="/MyProfile"
+           
           >
             Profile
-          </Link>
+          </a>
         </ul> 
-        <Link
-          className="Review"
+        <a href="/Review" className="Review"
           style={{ textDecoration: "none" }}
-          to="/Review"
+          
         >
           My Reviews
-        </Link>
+        </a>
         <ul>
-        <Link
-          className="styleLink"
+        <a href="/Products" className="styleLink"
           style={{ textDecoration: "none" }}
-          to="/Products"
+          
         >
           Products
-        </Link>
+        </a>
         </ul>
         <span className="styleUser">User:{user}</span>{" "}
         <ul>
-        <Link
-          className="styleLink"
+        <a href="/" className="styleLink"
           style={{ textDecoration: "none" }}
-          to="/"
           onClick={() => {
           setLoggedIn(false);
           localStorage.clear();
           }}
         >
           Logout
-        </Link>
+        </a>
       </ul>
   
     </nav>
