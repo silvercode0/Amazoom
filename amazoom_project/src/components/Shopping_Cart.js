@@ -16,23 +16,19 @@ import "./Shopping_Cart.css";
 // import "./userCart.css";
 
 const UserCart = (props) => {
-  //--------PROPS--------//
   const userCart = props.userCart;
   const setUserCart = props.setUserCart;
   const products = props.products;
   const user = props.user;
   
-  //--------PARAMS AND NAV--------//
   const navigate = useNavigate();
   function handleBack() {
     navigate("/products");
   }
-  //--------STATE--------//
   const [selectedQuantity, setSelectedQuantity] = useState(0);
 
-  const [cartItemId, setCartItemId] = useState(0);
-  const [selectedItem, setSelectedItem] = useState();
-  //--------FUNCTIONS--------//
+  // const [cartItemId, setCartItemId] = useState(0);
+  // const [selectedItem, setSelectedItem] = useState();
   async function handleNewDelete(productId) {
    
     const cartItemId = Number(productId);
@@ -66,7 +62,6 @@ const UserCart = (props) => {
       });
       setUserCart(newCart);
     } else {
-      //send notification that contains deleted.message
     }
   }
 
