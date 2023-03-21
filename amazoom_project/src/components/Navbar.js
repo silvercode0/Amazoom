@@ -1,9 +1,10 @@
-// import { Link } from "react-router-dom";
+
 // import Home from "./Home"
 
-
+import { NavLink } from "react-router-dom";
 import React from "react";
-import { LoggedIn, Logout } from "./Login";
+
+// import { LoggedIn, Logout } from "./Login";
 import "./Navbar.css";
 function Navbar({ setLoggedIn, loggedIn }) {
   const user = localStorage.getItem("user");
@@ -39,7 +40,7 @@ function Navbar({ setLoggedIn, loggedIn }) {
         </div>
         <div id="navs1">
         <ul>
-        <a href="/Products" className="styleLink"
+        <a to="/Products" className="styleLink"
           style={{ textDecoration: "none" }}
           
         >
@@ -65,3 +66,80 @@ function Navbar({ setLoggedIn, loggedIn }) {
 )}
 
 export default Navbar;
+
+// import React from "react";
+// import {  NavLink } from "react-router-dom";
+// // import { LoggedIn, Logout } from "./";
+// import "./Navbar.css";
+
+// const Navbar = (props) => {
+//   const user = props.user;
+//   const setUser = props.setUser;
+//   const handleLogout = props.handleLogout;
+//   const isLoggedIn = props.isLoggedIn;
+//   const setIsLoggedIn = props.setIsLoggedIn;
+
+//   return (
+//     <div>
+//       <div id="navbar">
+//         <NavLink to="/" id="logo">
+//           DimTECH
+//         </NavLink>
+//         <NavLink className="productsNav" to="/Products">
+//           Products
+//         </NavLink>
+//         {/* </div> */}
+
+//         {/* <div className="mainNav"> */}
+
+//         <div className="rightNav">
+//           <NavLink user={user} className="loggedin" />
+//           <div className="navbuttons">
+//             <NavLink to="/Login">
+//               <i className="fa-solid fa-user loginIcon"></i>
+//             </NavLink>
+//             <NavLink to="/mycart/cart_items"></NavLink>
+
+//             {user ? (
+//               <NavLink to="/mycart/cart_items">
+//                 <i className="fa-solid fa-cart-shopping shoppingIcon"></i>
+//               </NavLink>
+//             ) : (
+//               <NavLink to="/guestcart">
+//                 <i
+//                   id="cartIcon"
+//                   className="fa-solid fa-cart-shopping shoppingIcon"
+//                 ></i>
+//               </NavLink>
+//             )}
+
+//             {user && user.username ? (
+//               <NavLink to="/MyProfile">
+//                 <i className="fa-solid fa-address-card profileIcon"></i>
+//               </NavLink>
+//             ) : null}
+
+//             {user && user.is_admin === true ? (
+//               <NavLink to="/Admin" className="adminBtn">
+//                 Admin
+//               </NavLink>
+//             ) : null}
+//             {/* <div className="rightNav"> */}
+
+//             {isLoggedIn ? (
+//               <NavLink
+//                 handleLogout={handleLogout}
+//                 setUser={setUser}
+//                 setIsLoggedIn={setIsLoggedIn}
+//                 className="logoutBtn"
+//               />
+//             ) : null}
+//             {/* </div>  */}
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Navbar;

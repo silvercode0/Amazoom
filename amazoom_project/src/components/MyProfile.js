@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { updateUser, getAllUsers } from "./api/index";
+import { updateUser, getAllUsers } from "../api";
 import { Link } from "react-router-dom";
 import "./MyProfile.css";
 // import OrderHistory from "./OrderHistory";

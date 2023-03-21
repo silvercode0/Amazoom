@@ -1,4 +1,4 @@
-// import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import "./App.css"
 
@@ -8,13 +8,13 @@ import "./App.css"
 import Home from './components/Home';
 import Footer from './components/Footer';
 import ContactUs from './components/ContactUs';
-// import Guest_Cart from './Guest_Cart'
-// import MyProfile from './MyProfile';
+import Guest_Cart from './components/Guest_Cart'
+import MyProfile from './components/MyProfile';
 import Navbar from './components/Navbar';
-// import Login from './Login';
+import Login from './components/Login';
 // import Supplier from "./Supplier"
-// import Products from'./Products';
-// import Shopping_Cart from './Shopping_Cart';
+import Products from'./components/Products';
+import Shopping_Cart from './components/Shopping_Cart';
 
 // function App() {
 //   return (
@@ -39,19 +39,20 @@ import Navbar from './components/Navbar';
 
 
 
+
 function App() {
   return (
   
     <div style={{ textAlign: 'center' }}>
       <header>
         <Navbar/>
-
+        
         <br/>
+ 
         <ContactUs />
        </header>
          <div><Home/></div>
 
-      {/* <Guest_Cart /> */}
        <footer>
         <Footer />
        </footer>

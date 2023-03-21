@@ -5,7 +5,7 @@ import {
   updateQuantity,
   checkoutCart,
   getOrderHistory
-} from "../api-adapter";
+} from "../api";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "./Checkout.css";
 import "./Shopping_Cart.css";
@@ -65,7 +65,6 @@ const UserCart = (props) => {
     }
   }
 
-fetch
 
   async function handleCheckout() {
     const checkout = await checkoutCart();
