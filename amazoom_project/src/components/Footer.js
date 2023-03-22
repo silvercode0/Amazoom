@@ -1,6 +1,6 @@
 import React from "react";
-import Supplier from "./Supplier";
-import BuyOptions from "./BuyOptions";
+// import Supplier from "./Supplier";
+// import BuyOptions from "./BuyOptions";
 import { Outlet } from "react-router-dom";
 // import{ Link } from "react-router-dom";
 import "./Footer.css";

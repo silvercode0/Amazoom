@@ -1,5 +1,19 @@
 
-.supplier-container {
+.Amazoom{
+    color: black;
+    font-size: 25px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-content: center;
+}
+.col{
+    font-size: 30px;
+    color: black;
+    justify-content: center;
+    text-decoration: underline;
+    text-align: center;
+    align-content: center;
+}
+.Name{
+    text-decoration: none;
 }
