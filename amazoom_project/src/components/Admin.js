@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getAllUsers } from "../api-adapter";
-import CreateProduct from "./CreateProduct";
-import EditProduct from "./EditProduct";
+import { getAllUsers } from "../api";
+
 import { getProducts, deleteProduct } from "../api";
 
 import "./Admin.css";
@@ -155,7 +154,7 @@ const CreateProduct = (props) => {
   
     async function handleSubmit(e) {
       e.preventDefault();
-      const newProduct = await createProduct(
+      const newProduct = await CreateProduct(
         name,
         description,
         detailed_description,
@@ -271,7 +270,7 @@ const EditProduct = (props) => {
     async function handleSubmit(e) {
       e.preventDefault();
       const update = e.target.id;
-      const updated = await updateProduct(update, {
+      const updated = await EditProduct(update, {
         name: newName,
         description: newDescription,
         detailed_description: newDetailedDescription,

@@ -4,22 +4,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url("");
+  /* background-image: url("car-wash.png"); */
   box-shadow: 3px 3px 3px 3px rgba(206, 205, 205, 0.133);
   text-decoration: none;
   background-size: cover;
 }
 
-.mainNav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #logo {
-  -webkit-text-stroke: 0.3px white;
+  -webkit-text-stroke: 0.3px #b8a9a9;
   font-size: 40px;
-  /* margin-left: -80px; */
+  color: #066293;
   text-decoration: none;
   display: flex;
 }
@@ -43,34 +37,34 @@
   padding-bottom: 3px;
 }
 
-.loginIcon {
+.Icon1 {
   font-size: x-large;
-  -webkit-text-stroke: 0.3px white;
+  -webkit-text-stroke: 0.3px #ff8e8e;
   margin-right: 10px;
 }
 
-.shoppingIcon {
+.Icon2 {
   font-size: x-large;
-  -webkit-text-stroke: 0.3px white;
+  -webkit-text-stroke: 0.3px #f80000;
   margin-right: 10px;
 }
 
-.profileIcon {
+.Icon3 {
   font-size: x-large;
-  -webkit-text-stroke: 0.3px white;
+  -webkit-text-stroke: 0.3px #9c0000;
   margin-right: 20px;
 }
 
 .adminBtn {
   font-size: 18px;
   margin-right: 8px;
-  border: 2px solid #ffce74;
+  border: 2px solid #00bdd6;
   border-radius: 5px;
   background-color: #8998f900;
 
-  -webkit-text-stroke: 0.2px white;
+  -webkit-text-stroke: 0.2px #00879c;
   font-family: "Zen Dots", cursive;
-  color: #96efff;
+  color: #066293;
   text-decoration: none;
 }
 
@@ -81,9 +75,9 @@
 }
 
 #productsThing:hover,
-.loginIcon:hover,
-.shoppingIcon:hover,
-.profileIcon:hover,
+.Icon1:hover,
+.Icon2:hover,
+.Icon3:hover,
 .adminIcon:hover,
 #logoutBtn:hover {
   transform: scale(1.1);
@@ -104,11 +98,9 @@
 .productsNav {
   -webkit-text-stroke: 0.3px white;
   font-size: 25px;
+  color: #066293;
   text-decoration: none;
-  border: 2px solid #f5e7ff;
-  border-radius: 5px;
-  background-color: #38d1ffa7;
- 
+  border-radius: 5px; 
 }
 
 @media screen and (max-width: 768px) {
@@ -126,9 +118,9 @@
   }
 
   .adminIcon,
-  .loginIcon,
-  .profileIcon,
-  .shoppingIcon {
+  .Icon1,
+  .Icon3,
+  .Icon2 {
     font-size: medium;
     margin-left: 5px;
     margin-right: 5px;

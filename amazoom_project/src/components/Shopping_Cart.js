@@ -9,11 +9,7 @@ import {
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "./Checkout.css";
 import "./Shopping_Cart.css";
-// import StripeCheckout from "react-stripe-checkout";
-// import { makePayment } from "../api";
-// import STRIPE_PUBLISHABLE from "../constants/Stripe";
 
-// import "./userCart.css";
 
 const UserCart = (props) => {
   const userCart = props.userCart;

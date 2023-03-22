@@ -17,7 +17,7 @@
     height: 40px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    background: #323cff;
+    background: #212121;
     border: 5px outset #72e0ff;
   }
   
@@ -28,7 +28,7 @@
     background: #a2c8f3;
     width: 150px;
   
-    border: 5px outset #c2adcb;
+    border: 5px outset #b7b7ff;
   }
   
   #selectedQuantity {
