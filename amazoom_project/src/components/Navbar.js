@@ -32,6 +32,7 @@ function Layout ( props ) {
               <i className="Icon1"></i>
             </Link>
             <Link to="/Shopping_Cart/cart_items"></Link>
+            <Link to="/ContactUs" className="contact"></Link>
 
             {user ? (
               <Link to="/Shopping_Cart/cart_items">
