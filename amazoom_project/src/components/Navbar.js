@@ -31,14 +31,14 @@ function Layout ( props ) {
             <Link to="/Login">
               <i className="Icon1"></i>
             </Link>
-            <Link to="/mycart/cart_items"></Link>
+            <Link to="/Shopping_Cart/cart_items"></Link>
 
             {user ? (
-              <Link to="/mycart/cart_items">
+              <Link to="/Shopping_Cart/cart_items">
                 <i className="Icon2"></i>
               </Link>
             ) : (
-              <Link to="/guestcart">
+              <Link to="/guest_cart">
                 <i
                   id="cartIcon"
                   className="Icon5"

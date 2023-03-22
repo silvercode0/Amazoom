@@ -78,6 +78,7 @@ import Home from "./components/Home";
 import "./components/Footer.css";
 import Guest_Cart from "./components/Guest_Cart";
 import Footer from "./components/Footer";
+import BuyOptions from "./components/BuyOptions";
 // import AdminPage from "./components/Admin";
 // import AdminUsers from "./components/Admin";
 // import AdminProducts from "./components/Admin";
@@ -216,6 +217,9 @@ const Main = () => {
               />
               <Route path="/Shopping_Cart" element={<Checkout />} />
               <Route path="/ContactUs" element={<ContactUs />} />
+              <Route path="/BuyOptions" element={<BuyOptions />} />
+
+              
               <Route path="/Admin" element= "<AdminPage user={user} />" />
               <Route path="/Admin" component="<AdminUsers user={user} />" />
               <Route

@@ -1,3 +1,10 @@
 .BuyOptions-container{
-    color: rgb(157, 255, 164)
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#finance{
+    color: #000000;
 }

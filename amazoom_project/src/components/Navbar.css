@@ -3,6 +3,7 @@
   padding-right: 20px;
   display: flex;
   align-items: center;
+  color: black;
   justify-content: space-between;
   /* background-image: url("car-wash.png"); */
   box-shadow: 3px 3px 3px 3px rgba(206, 205, 205, 0.133);
@@ -20,12 +21,14 @@
 
 #navs1{
   display: flex;
+  color: black;
   justify-content: space-around;
   align-items: center;
 }
 
 .leftNav {
   display: flex;
+  color: black;
   justify-content: space-between;
 }
 
@@ -34,6 +37,7 @@
   flex-direction: column;
   align-items: flex-end;
   margin-right: 20px;
+  color: black;
   padding-bottom: 3px;
 }
 
@@ -41,18 +45,21 @@
   font-size: x-large;
   -webkit-text-stroke: 0.3px #ff8e8e;
   margin-right: 10px;
+  color: blue;
 }
 
 .Icon2 {
   font-size: x-large;
   -webkit-text-stroke: 0.3px #f80000;
   margin-right: 10px;
+  color: #f80000;
 }
 
 .Icon3 {
   font-size: x-large;
   -webkit-text-stroke: 0.3px #9c0000;
   margin-right: 20px;
+  color: black;
 }
 
 .adminBtn {
@@ -70,8 +77,12 @@
 
 .navbuttons {
   display: flex;
-
+  color: black;
   padding-left: 5px;
+}
+.navbuttons a{
+  background-color: blue;
+  color: #f80000;
 }
 
 #productsThing:hover,
@@ -81,6 +92,7 @@
 .adminIcon:hover,
 #logoutBtn:hover {
   transform: scale(1.1);
+  color: #f80000;
 }
 
 #logoutBtn {
@@ -115,6 +127,7 @@
 
   .mainNav {
     width: 300px;
+    color: #9c0000;
   }
 
   .adminIcon,
@@ -124,6 +137,7 @@
     font-size: medium;
     margin-left: 5px;
     margin-right: 5px;
+    color: black;
   }
 
   .adminBtn,
@@ -131,7 +145,7 @@
     font-size: 14px;
     -webkit-text-stroke: 0.2px white;
     margin-right: 2px;
-
+color: darkslategrey;
     font-size: large;
     margin-left: 30px;
   }

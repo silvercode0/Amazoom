@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    color: #91a9ff;
     justify-content: center;
   }
   
@@ -11,12 +12,14 @@
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    color: #72e0ff;
   }
   
   #rightButtonCart {
     height: 40px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
+    color: #b7b7ff;
     background: #212121;
     border: 5px outset #72e0ff;
   }
@@ -27,7 +30,8 @@
     border-top-left-radius: 20px;
     background: #a2c8f3;
     width: 150px;
-  
+    color: #b7b7ff;
+
     border: 5px outset #b7b7ff;
   }
   
@@ -35,6 +39,8 @@
     font-family: "Zen Dots", cursive;
     width: 60px;
     height: 40px;
+    color: #b7b7ff;
+
     border-bottom-left-radius: 0px;
     border-bottom-left-radius: 0px;
     background: #adead0;
@@ -50,6 +56,8 @@
   #allthebuttons {
     display: flex;
     height: 40px;
+    color: #b7b7ff;
+
     width: 300px;
     justify-content: center;
     margin-bottom: -10px;
